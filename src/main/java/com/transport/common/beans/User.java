@@ -10,6 +10,15 @@ public class User {
 	private String mobileNumber;
 	private String emailAdrress;
 	private String address;
+	private String userRole;
+
+	public String getUserRole() {
+		return userRole;
+	}
+
+	public void setUserRole(String userRole) {
+		this.userRole = userRole;
+	}
 
 	public long getUserId() {
 		return userId;
@@ -79,7 +88,8 @@ public class User {
 	public String toString() {
 		return "User [userId=" + userId + ", userName=" + userName + ", userFirstName=" + userFirstName
 				+ ", userMiddleName=" + userMiddleName + ", userLastName=" + userLastName + ", mobileNumber="
-				+ mobileNumber + ", emailAdrress=" + emailAdrress + ", address=" + address + "]";
+				+ mobileNumber + ", emailAdrress=" + emailAdrress + ", address=" + address + ", userRole=" + userRole
+				+ "]";
 	}
 
 }
